@@ -35,7 +35,7 @@ const Auth = () => {
               <Heart className="h-8 w-8 text-white" />
             </div>
             <span className="text-3xl font-bold bg-gradient-to-r from-rose-500 to-purple-600 bg-clip-text text-transparent">
-              Project M
+              Marrykal
             </span>
           </Link>
           <h2 className="mt-6 text-center text-3xl font-bold text-gray-900">

@@ -7,6 +7,9 @@ import Destinations from './pages/Destinations';
 import DestinationDetail from './pages/DestinationDetail';
 import Premium from './pages/Premium';
 import Auth from './pages/Auth';
+import Dashboard from './pages/Dashboard';
+import VendorDashboard from './pages/VendorDashboard';
+import AdminDashboard from './pages/AdminDashboard';
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
             <Route path="/destinations/:id" element={<DestinationDetail />} />
             <Route path="/premium" element={<Premium />} />
             <Route path="/auth" element={<Auth />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/vendor-dashboard" element={<VendorDashboard />} />
+            <Route path="/admin-dashboard" element={<AdminDashboard />} />
             {/* Placeholder routes */}
             <Route path="/packages" element={<div className="min-h-screen flex items-center justify-center"><h1 className="text-3xl font-bold">Packages Page Coming Soon</h1></div>} />
             <Route path="/vendors" element={<div className="min-h-screen flex items-center justify-center"><h1 className="text-3xl font-bold">Vendors Page Coming Soon</h1></div>} />

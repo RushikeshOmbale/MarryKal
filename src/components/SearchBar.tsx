@@ -27,6 +27,10 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
 
   return (
     <div className="bg-white rounded-2xl shadow-xl p-6 mx-4">
+      <div className="mb-4">
+        <h3 className="text-lg font-semibold text-gray-900 mb-2">Find Your Perfect Wedding Destination</h3>
+        <p className="text-sm text-gray-600">Filter by location, budget, guest count, and season to discover curated packages</p>
+      </div>
       <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
         {/* Location */}
         <div className="relative">

@@ -14,11 +14,11 @@ const Footer = () => {
                 <Heart className="h-6 w-6 text-white" />
               </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent">
-                Project M
+                Marrykal
               </span>
             </div>
             <p className="text-gray-400 mb-6">
-              Making destination weddings affordable and memorable for every couple. Your dream wedding, our expertise.
+              Curated destination wedding packages with seamless vendor management. Your perfect wedding, simplified.
             </p>
             <div className="flex space-x-4">
               <Facebook className="h-6 w-6 text-gray-400 hover:text-white cursor-pointer transition-colors" />
@@ -58,7 +58,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-rose-400" />
-                <span className="text-gray-400">hello@projectm.com</span>
+                <span className="text-gray-400">hello@marrykal.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-rose-400" />
@@ -75,7 +75,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Project M. All rights reserved.
+              © 2024 Marrykal. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">
