@@ -1,41 +1,35 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Destinations from './pages/Destinations';
-import DestinationDetail from './pages/DestinationDetail';
-import Premium from './pages/Premium';
-import Auth from './pages/Auth';
-import Dashboard from './pages/Dashboard';
-import VendorDashboard from './pages/VendorDashboard';
-import AdminDashboard from './pages/AdminDashboard';
+import { Link } from 'react-router-dom';
 
-function App() {
+const HeroSection = () => {
   return (
-    <Router>
-      <div className="min-h-screen bg-gray-50">
-        <Header />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/destinations" element={<Destinations />} />
-            <Route path="/destinations/:id" element={<DestinationDetail />} />
-            <Route path="/premium" element={<Premium />} />
-            <Route path="/auth" element={<Auth />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/vendor-dashboard" element={<VendorDashboard />} />
-            <Route path="/admin-dashboard" element={<AdminDashboard />} />
-            {/* Placeholder routes */}
-            <Route path="/packages" element={<div className="min-h-screen flex items-center justify-center"><h1 className="text-3xl font-bold">Packages Page Coming Soon</h1></div>} />
-            <Route path="/vendors" element={<div className="min-h-screen flex items-center justify-center"><h1 className="text-3xl font-bold">Vendors Page Coming Soon</h1></div>} />
-            <Route path="/about" element={<div className="min-h-screen flex items-center justify-center"><h1 className="text-3xl font-bold">About Page Coming Soon</h1></div>} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
-  );
-}
+    <div
+      className="relative bg-cover bg-center h-screen flex items-center justify-center text-white"
+      style={{
+        backgroundImage: "url('/path-to-your-image.jpg')", // replace with actual path
+      }}
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-export default App;
+      <div className="relative z-10 text-center px-4 max-w-3xl">
+        <h1 className="text-5xl font-bold mb-4">
+          Curated Destination <br />
+          <span className="text-pink-400">Wedding Packages</span>
+        </h1>
+        <p className="text-lg mb-6">
+          Discover handpicked venues with verified vendors and seamless booking experience. From royal palaces to beach resorts, create your perfect celebration.
+        </p>
+        <div className="flex justify-center gap-4">
+          <Link to="/destinations" className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-lg font-semibold">
+            Explore Destinations →
+          </Link>
+          <Link to="/packages" className="bg-gray-300 hover:bg-gray-400 text-black px-6 py-3 rounded-lg font-semibold">
+            View Packages
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default HeroSection;
